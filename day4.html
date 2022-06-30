@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Day-04</title>
+    <style>
+        #MainUL li ul li {display:none;}
+        #MainUL li:hover ul li {display:block;}
+        #MainUL li:hover ul li ul li {display:none;}
+        #MainUL li ul li:hover ul li {display:block;}
+        #MainUL li ul li:hover ul li ul li {display:none;}
+        #MainUL li ul li ul li:hover ul li {display:block;} 
+        div{
+            height:200px;
+            width:200px;
+            background-color: red;
+            color:black;
+            transition: 3s;
+
+        }
+        .rotate:hover{
+            transform: rotate(360deg);
+
+        } 
+        .rotate3d:hover{
+            transform: rotate3d(1,1,0,360deg);
+
+        } 
+        .box:hover{
+            box-shadow: 20px 20px  black;
+
+        } 
+        .text:hover{
+            text-shadow: 20px 20px  black;
+
+        }
+        .opa:hover{
+            opacity:0.2
+
+        } 
+        .trans:hover{
+            transform:translate(200px,200px)
+
+        } 
+        .skew:hover{
+            transform:skew(20deg,10deg)
+
+        }  
+        .over
+        {
+            overflow: auto;
+        }  
+    </style>
+
+</head>
+<body>
+    <ul id="MainUL">
+        <li>India
+            <ul>
+                <li>Delhi
+                    <ul>
+                        <li>Noida</li>
+                        <li>Red Fort</li>
+                    </ul>
+                </li>
+                
+                <li>Gujrat
+                    <ul>
+                        <li>Ahmedabad</li>
+                        <li>Vadodara</li>
+                    </ul>
+                </li>
+                
+                <li>Punjab
+                    <ul>
+                        <li>Ludhiyana</li>
+                        <li>Place</li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </li>
+        <li>Canada
+            <ul>
+                <li>Ontario</li>
+                <li>British</li>
+            </ul>
+        </li>
+        <li>US
+            <ul>
+                <li>California</li>
+                <li>New york</li>
+            </ul>
+        </li>
+        <li>Australia</li>
+    </ul>
+    <div class="rotate">
+        <h3>this done</h3>
+    </div>
+    <div class="rotate3d">
+        <h3>this done</h3>
+    </div>
+    <div class="box">
+        <h3>this done</h3>
+    </div>
+    <div class="opa">
+        <h3>this done</h3>
+    </div>
+    <div class="trans">
+        <h3>this done</h3>
+    </div>
+    <div class="skew">
+        <h3>this done</h3>
+    </div>
+    <div class="over">
+        <h3>this done</h3>
+        <h3>this done</h3>
+        <h3>this done</h3>
+        <h3>this done</h3>
+        <h3>this done</h3>
+        <h3>this done</h3>
+        <h3>this done</h3>
+        <h3>this done</h3>
+        <h3>this done</h3>
+    </div>
+    <div class="text">
+        <h3>this done</h3>
+    </div>
+
+    
+</body>
+</html>

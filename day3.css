@@ -2,10 +2,13 @@
 {
     /* border:2px solid black; */
     height:30px;
-    width:15%;
-    margin-left:2%;
+    width:17%;
+    margin-left:1%;
     float:left;
     margin-top:5px
+}
+#tag >span:hover{
+    font-size:40px;
 }
 span
 {
@@ -86,4 +89,13 @@ a{
     
     
     float:left
+}
+#icon
+{
+    border:1px solid black;
+    height:50px;
+    width:100%;
+}
+body{
+    margin:auto
 }
