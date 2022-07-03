@@ -1,0 +1,338 @@
+#tag
+{
+    /* border:2px solid black; */
+    height:30px;
+    width:17%;
+    margin-left:1%;
+    float:left;
+    margin-top:5px
+}
+#tag >span:hover{
+    font-size:40px;
+}
+span
+{
+    
+    font-size:35px
+}
+#search
+{
+    border:2px solid black;
+    height:30px;
+    width:40%;
+    margin-left:13%;
+    float:left;
+    margin-top:9px
+
+}
+#search > select{
+    height:30px;
+    width:100%
+}
+#sign{
+    float:left;
+    margin-top:9px;
+    margin-left:14%
+}
+.in
+{
+    font-size:25px;
+    
+}
+a{
+    text-decoration: none;
+    color:white
+}
+#bar
+{
+    height:150px;
+    margin-top:2%;
+    width:100%;
+    background-color:bisque;
+   
+}
+.name
+{
+    border-left:3px solid black;
+    height:149px;
+    width:10%;
+    margin-left:30%;
+    float:left
+    
+
+}
+.name1
+{
+    height:149px;
+    
+    float:left
+    
+}
+.video
+{
+    width:100%;
+    height:200px;
+    border:1px solid black;
+    z-index: 1;
+}
+.bg_size
+{
+    
+    width:100%;
+    min-width:100%;
+    height:200px;
+    background-size: cover;
+    
+
+}
+#category
+{
+    
+    height:500px;
+    width:100%;
+
+}
+#subcategory
+{
+   
+    height:370px;
+    width:90%;
+    margin:auto
+}
+.sub
+{
+    /* border:1px solid black; */
+    height:150px;
+    width:25%;
+    margin-left:5%;
+    margin-top:2%;
+    animation-name: demo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   
+    
+    
+    float:left
+}
+.sub > img 
+{
+    width:100%;
+    height:149px;
+    border-radius: 20%;
+    box-shadow: 10px 20px 10px black;
+
+}
+.sub >img:hover
+{
+   height:160px;
+   
+    
+}
+/* .sub:hover{
+    transform:skew(10deg,10deg)
+} */
+
+@keyframes demo{
+    0%{transform: skew(5deg,5deg);}
+    25%{transform: skew(20deg,10deg);}
+    50%{transform: skew(10deg,20deg);}
+    75%{transform: skew(20deg,10deg);}
+    100%{transform: skew(10deg,20deg);}
+}
+
+#icon
+{
+    border:1px solid black;
+    height:50px;
+    width:100%;
+}
+body{
+    margin:auto
+}
+#footer
+{
+    width:100%;
+    height:201px;
+    /* border:2px solid black; */
+    background-color:#80808063;
+    margin-top:1%;
+    display:inline-block;
+}
+.footerlast{
+    text-align:center;
+    
+}
+.vl{
+    border-right: 2px solid black;
+    height: 200px;
+    width:32%;
+    
+    float:left;
+    text-decoration: none;
+    
+}
+.noborder{
+    border:none;
+    text-decoration: none;
+}
+.cu
+{
+    text-decoration: none;
+}
+.slogo{
+    height:75px;
+    width:10%;
+    /* margin-right:5%; */
+    margin-top:1%;
+    margin-left:22%;
+    
+}
+p{
+    text-align:center;
+}
+a{
+    text-decoration:none;
+}
+#done
+{
+    height:200px;
+    width:100%;
+    /* background-image: url('images/product.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1%;
+}
+#done>img{
+    height:199px;
+    width:100%;
+    margin-left:1%;
+
+
+}
+#vd
+{
+    width:100%;
+    height:200px;
+    background: url(images/production\ ID_4818228.mp4);
+}
+.vd1{
+
+    /* min-height:100%; */
+    min-width:100%;
+    width:auto;
+    height:199px;
+   
+}
+/*listing part*/
+/* All content  */
+#content{
+    display: inline-block;
+    width:80%;
+    margin-left:10%;
+    background-color:auto;
+    overflow: visible;
+    
+}
+/* Filter */
+#filterDiv{
+    height:678px;
+    width:23%;
+    border:10px groove gray;
+    float: left;
+    box-shadow: 3px 9px 10px grey;
+    margin-top:1%   
+}
+ #fil{
+     text-align:center;
+     text-shadow: 7px 10px 10px black
+     
+
+}
+
+.inpur{
+    font-size:16px
+}
+#sort{
+    font-size:18px;
+    font-family:cursive;
+    font-weight:bold;
+
+}
+/* Content */
+#contentDiv{
+    height:800px;
+    width:68%;
+    margin-left: 2%;
+    
+    float: left;
+}
+.content1{
+    height:240px;
+    width:100%;
+    
+    display:block;
+    margin-left:10%;
+    margin-top:2%;
+    box-shadow:2px 7px 19px gray;
+    border-radius:16px;
+
+}
+.content1:hover{
+    transform:scale(1.1)
+}
+.subcontent1
+{
+    width:40%;
+    height:239px;
+   
+    
+    float:left;
+
+}
+.subcontent1 >img{
+    width:100%;
+    height:239px;
+    border-radius:17px;
+}
+.subcontent{
+    float:left;
+}
+
+.head{
+    font-size:25px;
+    color:black;
+    font-weight:bold;
+    font-family:cursive;
+    margin-left:1%;
+}
+.subcontent2{
+    width:58%;
+    display: inline-block;
+    margin-left: 2%;
+    height: 99%;
+    line-height: 1;
+    overflow: visible;
+
+}
+.subcontent2 > p {
+    
+    font-weight:bold;
+    margin-top:5%;
+    color:black;
+    overflow: visible;
+
+}
+/* Star */
+.checked{
+    color:black;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+.pin{
+    text-align: left
+}
+
+
+
