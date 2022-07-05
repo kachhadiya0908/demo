@@ -1,0 +1,48 @@
+#submain
+{
+    width:18%;
+    height:200px;
+    margin-left:8%;
+    margin-right:4%;
+    float:left;
+    background-color: #9e9e9eed;
+}
+#submain
+{
+    overflow: auto;
+}
+#submain1
+{
+    width:18%;
+    height:200px;
+    
+    margin-right:4%;
+    float:left;
+    background-color: #9e9e9eed;
+    overflow: auto;
+}
+#submain2
+{
+    width:18%;
+    height:200px;
+    
+    margin-right:4%;
+    float:left;
+    background-color: #9e9e9eed;
+    overflow: auto;
+}
+#submain3
+{
+    width:18%;
+    height:200px;
+    
+    margin-right:8%;
+    float:left;
+    background-color: #9e9e9eed;
+    overflow: auto;
+}
+.tj
+{
+    margin-left:5em;
+    margin-top:1em
+}
