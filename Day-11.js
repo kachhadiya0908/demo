@@ -1,0 +1,6 @@
+function demoExternal()
+
+        {
+            alert('Hello')
+
+        }

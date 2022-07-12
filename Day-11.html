@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function demoInternal()
+
+        {
+            alert('Hello')
+
+        }
+    </script>
+    <script src="Day-11.js"></script>
+
+</head>
+<body>
+    <input type="button" value="Inline" onclick="alert('Hello')"/>&nbsp;&nbsp;
+    <input type="button" value="Inline" onclick="prompt('Enter Your Name;')"/>&nbsp;&nbsp;
+    <input type="button" value="Inline" onclick="confirm('Are You sure to leave page?')"/>&nbsp;&nbsp;
+    <br/>
+    <br/>
+
+    <input type="button" value="internal" onclick="demoInternal()"/>
+    <br/><br/>
+    <input type="button" value="External" onclick="demoExternal()"/>
+    
+</body>
+</html>
