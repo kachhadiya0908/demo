@@ -14,7 +14,7 @@
         {
             height:200px;
             width: 30%;
-            border:2px groove black;
+            border:4px dotted black;
             position: absolute;
             z-index:1;
             margin-top:1%;
@@ -30,12 +30,39 @@
             margin-left:92%;
             margin-top:0%
         }
+        body{
+          background-color: white;
+          color:black;
+      }
+      .mybody
+      {
+          background-color: #b0c096cf;
+          color:black;
+      }
+
+      #demo
+      {
+          margin-left:90%;
+          margin-top:1%;
+      }
+      .cg
+      {
+        background-color: #69831ac2;
+      }
     </style>
+    
     <script>
         function demoInternal()
 
         {
-            alert('Hello')
+            if(confirm('are you want to enter in web app'))
+            {
+                alert('Welcome to my web')
+
+            }
+            else{
+                alert('Sorry ,you are awaited forweb')
+            }
             
 
         }
@@ -47,13 +74,31 @@
         {
             document.getElementById('name').style.display='none'
         }
+        function changeMode()
+        {   
+            let dash=document.body;
+            
+            
+            dash.classList.toggle('mybody')
+        }
+        function myFunction()
+        {   
+          // let dash1=document.nav;
+          // dash1.classList.toggle('cg')
+           let cdm=Array.from(document.getElementsByClassName("nav1"));
+           console.log(cdm)
+           cdm.map(elements=>elements.classList.toggle('cg'))
+
+            
+            
+        }
 
     </script>
     <script src="Day-11.js"></script>
 
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse nav1">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Developer</a>
@@ -69,6 +114,17 @@
             </li>
             <li><a href="#" onclick="alert('Mobile Number : 99999993843')">Contact us</a></li>
           </ul>
+          
+        
+          <a href="#" onClick="changeMode(); myFunction();">
+            <span class="glyphicon glyphicon-adjust" style="font-size:23px; color:white;margin-top:13px;margin-left:58%"></span>
+          </a>
+          
+          <!-- <a onclick="changeMode()">
+              <i class="fa fa-refresh" style="font-size:36px;" onclick="changeMode()"></i>
+          </a>
+           -->
+     
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
             <li><a href="#" onclick="confirm('Are you sure to logout from zomApp ?')"><span class="glyphicon glyphicon-log-in" ></span> Log Out</a></li>

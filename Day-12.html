@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+        function demoInternal()
+        {
+            document.getElementById("D1").style.backgroundColor="red";
+        }
+        function bgBody()
+        {
+            document.body.style.backgroundColor="green";
+        }
+        function byBody()
+        {
+            document.getElementById("D1").style.backgroundColor=document.getElementById("Cd").value
+        }
+        function byDiv()
+        {
+            document.body.style.backgroundColor=document.getElementById("CD").value
+        }
+        function inputBody()
+        {
+            document.body.style.backgroundColor=prompt("Enter a color");
+        }
+        function inputDiv()
+        {
+            document.getElementById("D1").style.backgroundColor=prompt("Enter a color");
+        }
+
+    </script>
+</head>
+<style>
+    #D1
+    {
+        height:200px;
+        width:200px;
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div id="D1">
+        Hello
+    </div>
+    <hr/>
+    <input type="button" onclick="demoInternal()" value="change div color"/>
+    <input type="button" onclick="bgBody()" value="change body color"/>
+    <hr/>
+    <input type="color" id="Cd" onchange="byBody()" value="Change Color Body"/>
+    <input type="color"  id="CD" onchange="byDiv()" value="Change Color Body"/>
+    <br/><hr/>
+    <input type="button" onclick="inputBody()" value="take from prompt"/>
+    <input type="button" onclick="inputDiv()" value="take from prompt"/>
+    <hr/>
+
+
+
+    
+</body>
+</html>
