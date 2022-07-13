@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+        
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid bgcolor nav1">
+                
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  
+                <a class="navbar-brand" href="#"><span class="tagi">Zomato</span></a>
+              </div>
+              
+
+              
+              
+                <div class="navbar-collapse collapse" id="bar">
+                    <a href="#" onClick="changeMode(); myFunction();">
+                        <span class="glyphicon glyphicon-adjust" style="font-size:23px; color:white;margin-top:13px;margin-left:79%"></span>
+                    </a>
+                    
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#" onclick="demoExternal()"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+                </ul>
+                </div>    
+            </div>
+        </nav>
+        <!-- Coupon -->
+        <div>
+            <div>
+                <div id="Coupon">
+                    <button class="but" onClick="closeCoupon()">&times</button>
+                    
+        
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="search">
+            <div id="logo">
+
+            </div>
+            <div id="iden">
+                <span>Z!</span>
+            </div>
+            <div id="text">
+                <span>Find Your Restuarnts By City Name</span>
+            </div>
+            <div id="find">
+                <div class="find1">
+                    <select>
+                        <option>------------------Select City--------------------</option>
+                        <option>Delhi</option>
+                        <option>Ahmedabad</option>
+                        <option>Mumbai</option>
+                    </select>
+                </div>
+                <div class="find1">
+                    <select>
+                        <option>-----------Search Near By Restuarants-----------</option>
+                        <option>U.S. Pizza</option>
+                        <option>Pizza Hut</option>
+                        <option>Darbar Lassi</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="quicksearch">
+            <div id="word">
+                <span id="word1">Quick Search</span>
+                <span id="word2">Find by different categories</span>
+                <div class="main1">
+                    <a href="listing.html">
+                        <div class="submain1">
+                            <img src="images/lunch.png" alt="Lunch" title="Lunch">
+                        </div>
+                        <div class="submain2">
+                            <h2 class="mainhead1">Lunch</h2>
+                            <h3 class="mainhead2">Enjoy the lunch</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="main1">
+                    <a href="listing.html">
+                        <div class="submain1">
+                            <img src="images/dinner.png" alt="Dinner" title="Dinner">
+                        </div>
+                        <div class="submain2">
+                            <h2 class="mainhead1">Dinner</h2>
+                            <h3 class="mainhead2">Take a dinner with big smile</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="main1">
+                    <a href="listing.html">
+                        <div class="submain1">
+                            <img src="images/sacks.png" alt="Snack" title="Snack">
+                        </div>
+                        <div class="submain2">
+                            <h2 class="mainhead1">Snack</h2>
+                            <h3 class="mainhead2">Try with friends</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="main1">
+                    <a href="listing.html">
+                        <div class="submain1">
+                            <img src="images/drinks.png" alt="Drink" title="Drink">
+                        </div>
+                        <div class="submain2">
+                            <h2 class="mainhead1">Beverages</h2>
+                            <h3 class="mainhead2">Drink in summer and makes mind fresh</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="main1">
+                    <a href="listing.html">
+                        <div class="submain1">
+                            <img src="images/nightlife.png" alt="Nighlife" title="Nightlife">
+                        </div>
+                        <div class="submain2">
+                            <h2 class="mainhead1">Nightlife</h2>
+                            <h3 class="mainhead2">Enjoy the nightlife with yours....</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="main1">
+                    <a href="listing.html">
+                        <div class="submain1">
+                            <img src="images/breakfast.jpg" alt="Breakfast" title="Breakfast">
+                        </div>
+                        <div class="submain2">
+                            <h2 class="mainhead1">Breakfast</h2>
+                            <h3 class="mainhead2">Enjoy the breakfast and make entire day happy</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            
+            <div id="main">
+                
+
+            </div>
+        </div>
+        <div id="footer">
+            <div class="vl">
+                <h4 class="footerlast">MOST POPULAR CATEGORIES</h4>
+                <p >Staple</p>
+                <p>Dinner</p>
+                <p>lunch</p>
+                <p>Snacks</p>
+            </div>
+            <div class="vl">
+                <h4 class="footerlast">CUSTOMER SERVICES</h4>
+                <p >About Us</p>
+                <p>FAQ</p>
+                <p>Term and Conditions</p>
+                <p>Cancellation and Return Policy</p>
+            </div>
+            <div class="vl noborder">
+                <h4 class="footerlast">CONTACT US ON</h4>
+                <div id="web">
+                    <a href="http://instagram.com" target="__blank">
+                        <img src="images/insta.png" alt="Instagram " class="slogo">
+                    </a>
+                    <a href="http://youtube.com" target="__blank">
+                        <img src="images/youtube1.png" alt="Youtube" class="slogo">
+                    </a>
+                    <a href="https://www.facebook.com" target="__blank">
+                        <img src="images/facebook.png" alt="Facebook" class="slogo">
+                    </a>
+                </div> 
+
+            </div>
+            
+            
+       
+        </div>
+        <script>
+            window.onload=loadCoupon();
+            
+        </script>
+        
+    </body>
+</html>
