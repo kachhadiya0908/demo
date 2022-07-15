@@ -46,7 +46,18 @@
                 }
                 
             })
+            $("#inputEmail4").blur(function(){
+                if(!$("#inputEmail4").val().includes("@gmail.com"))
+                {
+                    $("#err").text("Invalid Email")
+                }
+                else
+                {
+                    $("#err").text("")
+                }
+            })
         });
+
     </script>
 </head>
 
@@ -74,7 +85,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <label for="inputEmail" class="form-label">Email :</label>
+                        <label for="inputEmail" class="form-label">Email :</label><span id="err" style="color:red"></span>
                         <div class="input-group">
                             <div class="input-group-text"><i class="fa fa-envelope text-color"></i></div>
                             <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your Email">
