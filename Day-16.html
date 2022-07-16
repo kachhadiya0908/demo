@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        #box
+        {
+            height:200px;
+            width:200px;
+            background-color: teal;
+            min-width:150px;
+            max-width:1000px;
+            min-height:200px;
+            max-height:1000px;
+        }
+    </style>
+    <script>
+       $(document).ready(function(){
+        $("#show").attr("disabled", true);
+        $("#hide").click(function(){
+            if(confirm('are you sure?'))
+            {
+                
+                $("#box").hide(1000);
+                $("#hide").attr("disabled", true);
+                $("#show").attr("disabled", false);
+                    
+        
+            }
+
+        });
+
+        $("#show").click(function(){
+            if(confirm('are you sure?'))
+            {   
+                // if($("#box").hide()==True)
+               
+                $("#box").show(1000);
+                $("#show").attr("disabled", true);
+                $("#hide").attr("disabled", false);
+            }
+        });
+        $("#check").click(function(){
+            if($(this).html()=="hide")
+            {
+                $("#box").hide(1000)
+                $(this).html("show")
+            }
+            else{
+                $("#box").show(1000)
+                $(this).html("hide")
+            }
+          
+            
+            
+           
+            
+           
+        });
+        
+        $("#incre").click(function(){
+            w=$("#box").width();
+            h=$("#box").height();
+            $("#box").width(++w)
+            $("#box").height(++h)
+            
+        });
+        $("#decre").click(function(){
+            w=$("#box").width();
+            $("#box").width(--w);
+            h=$("#box").height();
+            $("#box").height(--h)
+
+        });
+        
+            
+            
+           
+            
+           
+        
+        
+       })
+    </script>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    <br/>
+    <button   id="hide" >hide</button>&nbsp;&nbsp;
+    <button   id="show" >show</button>&nbsp;&nbsp;
+    <button id="check">hide</button>&nbsp;&nbsp;
+    <button type="button" class="btn btn-default btn-sm" id="incre" onclick="fun()">
+        <span class="glyphicon glyphicon-plus"></span> Plus
+    </button>&nbsp;&nbsp;
+    <button type="button" class="btn btn-default btn-sm" id="decre">
+        <span class="glyphicon glyphicon-minus"></span> Plus
+    </button>&nbsp;&nbsp;
+    
+</body>
+</html>
