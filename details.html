@@ -7,6 +7,75 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#bt1").click(function(){
+                     
+                    $("#added").text("Item Added");
+                    
+                    w=$("#number").text();
+                    $("#number").text(++w);
+                   
+                
+                });
+                $("#bt4").click(function(){
+                    
+                    if($("#number").text()>=1)
+                    {
+                        w=$("#number").text();
+                        $("#number").text(--w);
+                    }
+                    
+                    
+
+                });
+                $("#bt2").click(function(){
+                    
+                    if($("#number").text()>=1)
+                    {
+                        w=$("#number").text();
+                        $("#number").text(--w);
+                    }
+                    
+                    
+
+                });
+                $("#bt3").click(function(){
+                     
+                     $("#added").text("Item Added");
+                     
+                     w=$("#number").text();
+                     $("#number").text(++w);
+                    
+                 
+                 });
+                 
+                 $("#bt5").click(function(){
+                     
+                     $("#added").text("Item Added");
+                     
+                     w=$("#number").text();
+                     $("#number").text(++w);
+                    
+                 
+                 });
+                 $("#bt6").click(function(){
+                    
+                    if($("#number").text()>=1)
+                    {
+                        w=$("#number").text();
+                        $("#number").text(--w);
+                    }
+                    
+                    
+
+                });
+                
+                
+        
+        })
+        </script>
         
     </head>
     <body>
@@ -70,38 +139,100 @@
 
 
             </div>
+            
+            
         </div>
-        <div id="footer">
-            <div class="vl">
-                <h4 class="footerlast">MOST POPULAR CATEGORIES</h4>
-                <p >Staple</p>
-                <p>Dinner</p>
-                <p>lunch</p>
-                <p>Snacks</p>
-            </div>
-            <div class="vl">
-                <h4 class="footerlast">CUSTOMER SERVICES</h4>
-                <p>About Us</p>
-                <p>FAQ</p>
-                <p>Term and Conditions</p>
-                <p>Cancellation and Return Policy</p>
-            </div>
-            <div class="vl noborder">
-                <h4 class="footerlast">CONTACT US ON</h4>
-                <div id="web">
-                    <a href="http://instagram.com" target="__blank">
-                        <img src="images/insta.png" alt="Instagram " class="slogo">
-                    </a>
-                    <a href="http://youtube.com" target="__blank">
-                        <img src="images/youtube1.png" alt="Youtube" class="slogo">
-                    </a>
-                    <a href="http://facebook.com" target="__blank">
-                        <img src="images/facebook.png" alt="Facebook" class="slogo">
-                    </a>
+        <div class="col-md-12 bg-success">
+            <h1>Item Added</h1>
+            <span id="added">item added </span>&nbsp;&nbsp;<span id="number">0 </span>
+        </div>
+        
+        <div class="col-md-12 bg-info">
+            <div >
+                <div class="col-md-7" >
+                    <b>1</b>
+                    <img src="images/Burger.png" style="height:60;width:60">&nbsp;
+                    
+                </div>
+                <div class="col-md-4" style="margin-top:1%">
+                    <button class="btn btn-success" id="bt1" >
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button> &nbsp;
+                    <button class="btn btn-danger" id="bt2">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
                 </div> 
-
             </div>
+                <br/>
+                <div  >
+                    <div class="col-md-7" style="margin-top:1%;">
+                        <b>2</b>
+                        <img src="images/McD.png" style="height:60;width:60">&nbsp;
+                        
+                    </div>
+                    <div class="col-md-4" style="margin-top:1%">
+                        <button class="btn btn-success" >
+                            <span class="glyphicon glyphicon-plus" id="bt3"></span>
+                        </button> &nbsp;
+                        <button class="btn btn-danger">
+                            <span class="glyphicon glyphicon-minus" id="bt4"></span>
+                        </button>
+                    </div>
+                </div>
+                <br/>
+                    
+                        <div class="col-md-7" style="margin-top:1%;">
+                            <b>3</b>
+                            <img src="images/burger.jpg" style="height:60;width:60">&nbsp;
+                            
+                        </div>
+                        <div class="col-md-4" >
+                            <button class="btn btn-success" id="bt5">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button> &nbsp;
+                            <button class="btn btn-danger" id="bt6">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </div>
+                    
+                
+        </div>
+        <br/>
+        
             
             
        
         </div>
+        <br/>   
+        <div id="footer">
+                <div class="vl">
+                        <h4 class="footerlast">MOST POPULAR CATEGORIES</h4>
+                        <p >Staple</p>
+                        <p>Dinner</p>
+                        <p>lunch</p>
+                        <p>Snacks</p>
+                </div>
+                <div class="vl">
+                        <h4 class="footerlast">CUSTOMER SERVICES</h4>
+                        <p>About Us</p>
+                        <p>FAQ</p>
+                        <p>Term and Conditions</p>
+                        <p>Cancellation and Return Policy</p>
+                </div>
+                <div class="vl noborder">
+                    <h4 class="footerlast">CONTACT US ON</h4>
+                    <div id="web">
+                            <a href="http://instagram.com" target="__blank">
+                                <img src="images/insta.png" alt="Instagram " class="slogo">
+                            </a>
+                            <a href="http://youtube.com" target="__blank">
+                                <img src="images/youtube1.png" alt="Youtube" class="slogo">
+                            </a>
+                            <a href="http://facebook.com" target="__blank">
+                                <img src="images/facebook.png" alt="Facebook" class="slogo">
+                            </a>
+                    </div> 
+                </div>
+        </div>
+    </body>
+</html>
