@@ -22,6 +22,11 @@
         }
     </style>
     <script>
+            var nameF=false
+            var nameL=false
+            var nameE=false
+            var numberP=false
+            var numberPhone=false
         //Reg Ex Declaration - Globaly.
 			var $FNameLNameRegEx = /^([a-zA-Z]{2,20})$/;
 			var $FullNameRegEx = /^([a-zA-Z ]{2,40})$/;
@@ -44,7 +49,8 @@
             $("#Fname").blur(function(){
                 $("#fname").empty();
                 if($(this).val()=="" || $(this).val()==null)
-                {
+                {   
+                    nameF=false
                     $("#fname").html("(*) Required")
                 }
                 else
@@ -52,13 +58,15 @@
                     if(!$(this).val().match($FNameLNameRegEx))
                     {
                         $("#fname").html("(*) Invalid")
+                        nameF=false
                     }
                 }
             })
             $("#Lname").blur(function(){
                 $("#lname").empty();
                 if($(this).val()=="" || $(this).val()==null)
-                {
+                {   
+                    nameL=false
                     $("#lname").html("(*) Required")
                 }
                 else
@@ -66,6 +74,7 @@
                     if(!$(this).val().match($FNameLNameRegEx))
                     {
                         $("#lname").html("(*) Invalid")
+                        nameL=false
                     }
                 }
             })
@@ -73,6 +82,7 @@
                 $("#err").empty();
                 if($(this).val()=="" || $(this).val()==null)
                 {
+                    nameE=false
                     $("#err").html("(*) Required")
                 }
                 else
@@ -80,13 +90,31 @@
                     if(!$(this).val().match($EmailIdRegEx))
                     {
                         $("#err").html("(*) Invalid")
+                        nameE=false
+                    }
+                }
+            })
+            $("#inputPhone4").blur(function(){
+                $("#phone").empty();
+                if($(this).val()=="" || $(this).val()==null)
+                {
+                    numberPhone=false
+                    $("#phone").html("(*) Required")
+                }
+                else
+                {
+                    if(!$(this).val().match($BankAccountNoRegEx))
+                    {
+                        $("#phone").html("(*) Invalid")
+                        numberPhone=false
                     }
                 }
             })
             $("#inputPin4").blur(function(){
                 $("#pin").empty();
                 if($(this).val()=="" || $(this).val()==null)
-                {
+                {   
+                    numberP=false
                     $("#pin").html("(*) Required")
                 }
                 else
@@ -94,16 +122,21 @@
                     if(!$(this).val().match($PincodeRegEx))
                     {
                         $("#pin").html("(*) Invalid")
+                        numberP=false
                     }
                 }
             })
             $("#submitOk").click(function(){
                 
-                if(!$("#inputEmail4").val().match($EmailIdRegEx) || !$("#Lname").val().match($FNameLNameRegEx) || !$("#Fname").val().match($FNameLNameRegEx)  || !$("#inputPin4").val().match($EmailIdRegEx) || !$("#inputPhone4").val().match($EmailIdRegEx)  )
+                if(!(nameF && nameL && nameE && numberP && numberPhone))
                 {
+                    
+                    event.preventDefault();
+                    window.history.back();
                     alert('Please Fill All Detail ')
                 }
             })
+            // !$("#inputEmail4").val().match($EmailIdRegEx) || !$("#Lname").val().match($FNameLNameRegEx) || !$("#Fname").val().match($FNameLNameRegEx)  || !$("#inputPin4").val().match($EmailIdRegEx) || !$("#inputPhone4").val().match($BankAccountNoRegEx) || $("#inputEmail4").val()=="" || $("#inputEmail4").val()==null ||$("#Lname").val()=="" || $("#Lname").val()==null ||$("#Fname").val()=="" || $("#Fname").val()==null || $("#inputPin4").val()=="" || $("#inputPin4").val()==null ||  $("#inputPhone4").val()==null  || ("#inputPhone4").val()=="" 
 
             // $("#Fname").blur(function(){
             //     if(!$(this).val().match($fname) || $("#Fname").val() == '' || ("#Fname").val() == null)
@@ -177,14 +210,14 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <label for="inputEmail" class="form-label">Email :</label><small id="err" style="color:red;margin:2%"></small>
+                        <label for="inputEmail4" class="form-label">Email :</label><small id="err" style="color:red;margin:2%"></small>
                         <div class="input-group">
                             <div class="input-group-text"><i class="fa fa-envelope text-color"></i></div>
                             <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your Email">
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <label for="inputEmail4" class="form-label">Contact No. :</label><small id="err" style="color:red;margin:2%"></small>
+                        <label for="inputPhone4" class="form-label">Contact No. :</label><small id="phone" style="color:red;margin:2%"></small>
                         <div class="input-group">
                             <div class="input-group-text"><i class="fa fa-phone text-color"></i></div>
                             <input type="number" class="form-control" id="inputPhone4" placeholder="Enter Contact No.">
