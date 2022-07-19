@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css" />
+      <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+    <title>Draggable</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border: 2px solid black;
+        }
+        .box p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="box" id="firstdiv">
+    <p>hello</p>
+</div><hr>
+
+<div class="box" id="div1">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam fuga illum.</span>
+</div><hr>
+
+<div class="box" id="div2">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam fuga illum.</span>
+</div><hr>
+
+<div class="box" id="div3">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam fuga illum.</span>
+</div><hr>
+
+<div class="box" id="div4">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam fuga illum.</span>
+</div><hr>
+
+<div class="box" id="div5">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam fuga illum.</span>
+</div><hr>
+
+
+
+
+<script>
+    $(document).ready(()=>{
+        $("#firstdiv").draggable();
+
+        $("#div1 span").draggable({
+            containment:"#div1"
+        });
+        
+        $("#div2 span").draggable({
+            axis:"x"
+        });
+        
+        $("#div3 span").draggable({
+            axis:"y"
+        });
+        
+        $("#div4 span").draggable({
+            distance:100
+        });
+        
+        $("#div5 span").draggable({
+            delay:3000
+        });
+
+        
+    });
+</script>
+</body>
+</html>
