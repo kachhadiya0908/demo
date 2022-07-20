@@ -21,17 +21,47 @@
                 }
 
             })
+            $("#slidePrice").slider({
+                range:true,
+                min:1,
+                max:500,
+                values:[1,50],
+                start:function(event,ui){
+                    $("#startValue").val("$" +ui.values[0])
+                },
+                stop:function(event,ui){
+                    $("#stopValue").val("$" +ui.values[1])
+                },
+                change:function(event,ui){
+                    $("#stopValue").val("$" +ui.values[1])
+                },
+                slide:function(event,ui){
+                    $("#stopValue").val("$" +ui.values[1])
+                }
+
+            })
 
         })
     </script>
 </head>
 <body>
     <label for="ageValue">Your Age :</label>
-    <input type="text" id="ageValue" readonly/>
-    <br/>
-    <div id="slideBirth" style="width:25%"></div>
+    <input type="text" id="ageValue" value="18" disabled style="color:red;font-weight: bold;"/>
+   <br/><br>    
+    <div id="slideBirth" style="width:25%;margin-left:1%"></div>
+    <hr/>
 
     <div id="slidePrice"></div>
+    <br><br>
+    <label for="startValue">Start Value :</label>
+    <input type="text" id="startValue"  disabled style="color:red;font-weight: bold;"/>
+    <br><br>
+    <label for="stopValue">Stop Value :</label>
+    <input type="text" id="stopValue"  disabled style="color:red;font-weight: bold;"/>
+    
+
+
+    
 
     
 </body>
