@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css" />
+    
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $("#myDiv").dialog()
+        
+            $("#myButton").click(function(){
+                $("#myDiv").dialog()
+            })
+        })
+        
+
+
+    </script>
+</head>
+<body>
+    <div id="myDiv" title="My Title">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eaque.</p>
+        <input typ="text">
+
+    </div>
+    <button id="myButton">click Here</button>
+</body>
+</html>
