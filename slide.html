@@ -36,7 +36,7 @@
                     $("#stopValue").val("$" +ui.values[1])
                 },
                 slide:function(event,ui){
-                    $("#stopValue").val("$" +ui.values[1])
+                    $("#slideDc").val("$" +ui.values[0]+ "-"+"$" +ui.values[1])
                 }
 
             })
@@ -58,7 +58,11 @@
     <br><br>
     <label for="stopValue">Stop Value :</label>
     <input type="text" id="stopValue"  disabled style="color:red;font-weight: bold;"/>
+    <br><br>
+    <label for="slideDc">Slide Range :</label>
+    <input type="text" id="slideDc"  disabled style="color:red;font-weight: bold;"/>-
     
+
 
 
     
