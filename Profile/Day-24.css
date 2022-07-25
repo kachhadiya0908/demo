@@ -1,0 +1,144 @@
+.bg
+{
+    background-color: rgb(18, 18, 71)!important;
+}
+#firstDiv
+{
+    height:1000px;
+    width:100%;
+    z-index: -1;
+    position: absolute;
+    margin-top: 0%;
+    
+}
+#secondDiv
+{
+    height:500px;
+    width:70%;
+    position: fixed;
+    z-index:1;
+    background-color: rgb(185, 211, 246);
+    margin-left:15%;
+    margin-top:7%;
+    /* opacity:0.8; */
+    
+}
+#subContent
+{
+    height:180px;
+    width:100%;
+    display:block
+    
+}
+#subContent >img{
+    height:180px;
+    width:20%;
+    margin-left:40%;
+    
+    opacity: 1;
+    
+}
+#subContent >img:hover
+{
+    opacity: 1;
+}
+
+#secondDiv:hover {
+    opacity: 0.8;
+}
+#subContent2
+{   height:60px;
+    width:100%;
+    display:block;
+    border-bottom:1px solid black;
+    margin-top: 5px;
+}
+#subContent3
+{   
+    height:60px;
+    width:100%;
+    display:block;
+    margin-top: 2%;
+    border-bottom:1px solid black;
+    text-align: center;
+
+}
+.sub
+{
+    float:left;
+    margin-left:20%;
+    
+
+}
+
+#subContent4
+{   
+    height:70px;
+    width:100%;
+    display:block;
+    margin-top: 2%;
+   
+
+}
+.content
+{
+    width:30%;
+    height:37px;
+    margin-left:47%;
+
+}
+.ok
+{
+    font-size:48px;
+}
+@media screen and (max-width:1089px) {
+    #secondDiv
+    {
+        margin-top:10%;
+    }
+    
+}
+@media screen and (min-width:901px) {
+    .content
+{
+    
+    margin-left:37%;
+
+}
+    
+}
+@media screen and (max-width:760px) {
+    #secondDiv
+    {
+        margin-top:14%;
+    }
+    .content
+    {
+        width:50%;
+        margin-left:32%;
+    
+    }
+    
+}
+@media screen and (max-width:548px) {
+    #secondDiv
+    {
+        margin-top:17%;
+        width:75%;
+    }
+    .content
+    {
+        width:50%;
+
+        margin-left:26%;
+    
+    }
+    .sub
+{
+    display:block
+    margin-left:10%;
+    
+
+}   
+    
+}
